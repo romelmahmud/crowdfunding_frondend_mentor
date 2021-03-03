@@ -1,0 +1,24 @@
+.header {
+  background-image: url(/asset/images/image-hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-top: 1.875rem;
+  padding-bottom: 15.375rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navbar {
+    .header__logo {
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+}
