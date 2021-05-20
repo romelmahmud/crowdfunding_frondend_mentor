@@ -14,6 +14,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 img {
@@ -33,6 +34,7 @@ img {
   background-position: center;
   padding-top: 1.875rem;
   padding-bottom: 15.375rem;
+  position: relative;
 }
 
 .header__container {
@@ -48,6 +50,44 @@ img {
 }
 
 .header__nav {
+  display: none;
+}
+
+.mobile--nav {
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 2.25rem;
+}
+
+.mobile--nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile--nav a {
+  color: black;
+  padding: 1.75rem 1.5rem;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  font-weight: 500;
+}
+
+.mobile--nav a:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.mobile--nav a:hover {
+  background-color: lightgrey;
+  padding-left: 2rem;
+}
+
+.header__close {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
