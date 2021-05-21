@@ -2,12 +2,18 @@
   background-image: url(/asset/images/image-hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100%;
   transition: all 250ms ease-in;
-
   padding-top: 1.875rem;
   padding-bottom: 15.375rem;
   position: relative;
+  @include md__screen {
+    padding-top: 2.68rem;
+    height: 27rem;
+  }
+  @include lg__screen {
+    background-image: url(/asset/images/image-hero-desktop.jpg);
+  }
 
   &__container {
     display: flex;
@@ -16,6 +22,30 @@
   }
 
   &__nav {
+    display: none;
+    @include md__screen {
+      display: block;
+    }
+    a {
+      margin-left: 2.25rem;
+      font-weight: 500;
+      padding-bottom: 0.5rem;
+      // transition: border 250ms ease-in-out;
+      &:hover {
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+// .header__navbar {
+//   @include md__screen {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
+.header__hambuger {
+  @include md__screen {
     display: none;
   }
 }
